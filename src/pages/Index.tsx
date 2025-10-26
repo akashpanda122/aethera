@@ -17,7 +17,8 @@ import {
   BarChart3,
   Shield
 } from "lucide-react";
-import heroImage from "@/assets/hero-energy-grid.jpg";
+import heroImage from "@/assets/hero-renewable-network.jpg";
+import bgImage from "@/assets/bg-energy-grid.jpg";
 import ScrollExpandMedia from "@/components/ui/scroll-expansion-hero";
 
 const Index = () => {
@@ -40,7 +41,7 @@ const Index = () => {
       <ScrollExpandMedia
         mediaType="image"
         mediaSrc={heroImage}
-        bgImageSrc={heroImage}
+        bgImageSrc={bgImage}
         title="Aethera DePIN Network"
         date="Tokenized Energy"
         scrollToExpand="Scroll to Explore"
