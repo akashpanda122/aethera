@@ -18,6 +18,7 @@ import {
   Shield
 } from "lucide-react";
 import heroImage from "@/assets/hero-energy-grid.jpg";
+import ScrollExpandMedia from "@/components/ui/scroll-expansion-hero";
 
 const Index = () => {
   const fadeInUp = {
@@ -35,111 +36,67 @@ const Index = () => {
 
   return (
     <div className="relative overflow-hidden">
-      {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center">
-        {/* Background with image and gradient overlay */}
-        <div 
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url(${heroImage})` }}
-        >
-          <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/60 to-background" />
-        </div>
-
-        {/* Animated glow orbs */}
-        <div className="absolute top-20 left-10 w-64 h-64 bg-energy/20 rounded-full blur-3xl animate-glow-pulse" />
-        <div className="absolute bottom-20 right-10 w-96 h-96 bg-solar/10 rounded-full blur-3xl animate-glow-pulse" style={{ animationDelay: '1.5s' }} />
-
-        <div className="container relative z-10 mx-auto px-4 py-20">
-          <motion.div 
-            className="max-w-4xl mx-auto text-center space-y-8"
+      {/* Hero Section with Scroll Expansion */}
+      <ScrollExpandMedia
+        mediaType="image"
+        mediaSrc={heroImage}
+        bgImageSrc={heroImage}
+        title="Aethera DePIN Network"
+        date="Tokenized Energy"
+        scrollToExpand="Scroll to Explore"
+        textBlend
+      >
+        <div className="space-y-8 text-center max-w-3xl mx-auto pb-16">
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
+            className="inline-block px-6 py-2 bg-energy/20 border border-energy/30 rounded-full backdrop-blur-sm"
           >
-            <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ delay: 0.2, duration: 0.6 }}
-              className="inline-block"
-            >
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-energy/10 border border-energy/20 backdrop-blur-sm">
-                <Zap className="w-4 h-4 text-energy" />
-                <span className="text-sm text-energy font-medium">Powered by DePIN Technology</span>
-              </div>
-            </motion.div>
+            <span className="text-energy-foreground font-semibold">Powered by DePIN Technology</span>
+          </motion.div>
 
-            <motion.h1 
-              className="text-5xl md:text-7xl font-bold tracking-tight"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.3, duration: 0.8 }}
-            >
-              <span className="bg-gradient-to-r from-energy via-solar to-energy bg-clip-text text-transparent bg-[length:200%_auto] animate-shimmer">
-                The DePIN for Renewable
-              </span>
-              <br />
-              <span className="text-foreground">Power Generation & Storage</span>
-            </motion.h1>
+          <h2 className="text-4xl md:text-5xl font-bold text-foreground">
+            The DePIN for Renewable Power Generation & Storage
+          </h2>
 
-            <motion.p 
-              className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.5, duration: 0.8 }}
-            >
-              Tokenized. Climate-neutral. Bridging the{" "}
-              <span className="text-solar font-semibold">$350B financing gap</span>{" "}
-              for renewable energy.
-            </motion.p>
+          <p className="text-xl text-muted-foreground">
+            <span className="font-semibold text-solar-foreground">Tokenized.</span>{" "}
+            <span className="font-semibold text-energy-foreground">Climate-neutral.</span>{" "}
+            Bridging the $350B financing gap for renewable energy.
+          </p>
 
-            <motion.div 
-              className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.7, duration: 0.8 }}
-            >
-              <Button size="lg" variant="hero" className="group">
-                Explore the Network
-                <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-              </Button>
-              <Button size="lg" variant="outline" className="border-solar text-solar hover:bg-solar/10">
-                Join Early Access
-              </Button>
-            </motion.div>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
+            <Button variant="hero" size="lg" className="group">
+              Explore the Network
+              <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+            </Button>
+            <Button variant="outline" size="lg" className="bg-background/50 backdrop-blur-sm border-energy/30 hover:bg-energy/10">
+              Join Early Access
+            </Button>
+          </div>
 
-            <motion.div
-              className="grid grid-cols-3 gap-8 pt-12 max-w-2xl mx-auto"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 1, duration: 0.8 }}
-            >
-              <div className="text-center">
-                <div className="text-3xl font-bold text-energy">2,000+</div>
-                <div className="text-sm text-muted-foreground mt-1">Renewable Nodes</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-solar">12+</div>
-                <div className="text-sm text-muted-foreground mt-1">Countries</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-energy">$50M+</div>
-                <div className="text-sm text-muted-foreground mt-1">Tokenized Financing</div>
-              </div>
-            </motion.div>
+          <motion.div
+            className="grid grid-cols-3 gap-8 pt-12 max-w-2xl mx-auto"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.5, duration: 0.8 }}
+          >
+            <div className="text-center">
+              <div className="text-3xl font-bold text-energy">2,000+</div>
+              <div className="text-sm text-muted-foreground mt-1">Renewable Nodes</div>
+            </div>
+            <div className="text-center">
+              <div className="text-3xl font-bold text-solar">12+</div>
+              <div className="text-sm text-muted-foreground mt-1">Countries</div>
+            </div>
+            <div className="text-center">
+              <div className="text-3xl font-bold text-energy">$50M+</div>
+              <div className="text-sm text-muted-foreground mt-1">Tokenized Financing</div>
+            </div>
           </motion.div>
         </div>
-
-        {/* Scroll indicator */}
-        <motion.div
-          className="absolute bottom-8 left-1/2 -translate-x-1/2"
-          animate={{ y: [0, 10, 0] }}
-          transition={{ repeat: Infinity, duration: 2 }}
-        >
-          <div className="w-6 h-10 border-2 border-energy/30 rounded-full p-1">
-            <div className="w-1 h-3 bg-energy rounded-full mx-auto animate-pulse" />
-          </div>
-        </motion.div>
-      </section>
+      </ScrollExpandMedia>
 
       {/* Problem Section */}
       <section className="py-24 relative">
