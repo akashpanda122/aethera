@@ -17,8 +17,8 @@ import {
   BarChart3,
   Shield
 } from "lucide-react";
-import heroImage from "@/assets/hero-renewable-network.jpg";
-import bgImage from "@/assets/bg-energy-grid.jpg";
+import heroImage from "@/assets/vertical.png";
+import bgImage from "@/assets/bg.png";
 import ScrollExpandMedia from "@/components/ui/scroll-expansion-hero";
 import { GlowCard } from "@/components/ui/spotlight-card";
 import { StackedCircularFooter } from "@/components/ui/stacked-circular-footer";
@@ -56,16 +56,16 @@ const Index = () => {
             transition={{ duration: 0.8 }}
             className="inline-block px-6 py-2 bg-energy/20 border border-energy/30 rounded-full backdrop-blur-sm"
           >
-            <span className="text-energy-foreground font-semibold">Powered by DePIN Technology</span>
+            <span className="text-white font-semibold">Powered by DePIN Technology</span>
           </motion.div>
 
           <h2 className="text-4xl md:text-5xl font-bold text-foreground">
             The DePIN for Renewable Power Generation & Storage
           </h2>
 
-          <p className="text-xl text-muted-foreground">
-            <span className="font-semibold text-solar-foreground">Tokenized.</span>{" "}
-            <span className="font-semibold text-energy-foreground">Climate-neutral.</span>{" "}
+          <p className="text-xl text-foreground/80">
+            <span className="font-semibold text-primar">Tokenized.</span>{" "}
+            <span className="font-semibold text-accent">Climate-neutral.</span>{" "}
             Bridging the $350B financing gap for renewable energy.
           </p>
 
@@ -75,11 +75,11 @@ const Index = () => {
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </Button>
             <Button variant="outline" size="lg" className="bg-background/50 backdrop-blur-sm border-energy/30 hover:bg-energy/10">
-              Join Early Access
+              Join Now
             </Button>
           </div>
 
-          <motion.div
+          {/*<motion.div
             className="grid grid-cols-3 gap-8 pt-12 max-w-2xl mx-auto"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -97,7 +97,7 @@ const Index = () => {
               <div className="text-3xl font-bold text-energy">$50M+</div>
               <div className="text-sm text-muted-foreground mt-1">Tokenized Financing</div>
             </div>
-          </motion.div>
+          </motion.div>*/}
         </div>
       </ScrollExpandMedia>
 
@@ -317,9 +317,9 @@ const Index = () => {
                 <div className="flex flex-col items-center justify-center text-center h-full">
                   <Sun className="w-12 h-12 text-energy mb-4" />
                   <div className="text-5xl font-bold text-energy mb-2">2,000+</div>
-                  <div className="text-foreground mb-4 font-medium">Renewable Nodes Connected</div>
+                  <div className="text-foreground mb-4 font-medium">Decentralized Renewable Network</div>
                   <div className="text-sm text-muted-foreground">
-                    Solar farms, wind turbines, and battery storage facilities
+                    Building the foundation for on-chain solar, wind, and storage nodes.
                   </div>
                 </div>
               </GlowCard>
@@ -334,9 +334,9 @@ const Index = () => {
                 <div className="flex flex-col items-center justify-center text-center h-full">
                   <Globe className="w-12 h-12 text-solar mb-4" />
                   <div className="text-5xl font-bold text-solar mb-2">12+</div>
-                  <div className="text-foreground mb-4 font-medium">Countries Participating</div>
+                  <div className="text-foreground mb-4 font-medium">Global by Design</div>
                   <div className="text-sm text-muted-foreground">
-                    Global network spanning multiple continents
+                    Connecting clean energy projects and investors across continents.
                   </div>
                 </div>
               </GlowCard>
@@ -351,9 +351,9 @@ const Index = () => {
                 <div className="flex flex-col items-center justify-center text-center h-full">
                   <BarChart3 className="w-12 h-12 text-energy mb-4" />
                   <div className="text-5xl font-bold text-energy mb-2">$50M+</div>
-                  <div className="text-foreground mb-4 font-medium">Tokenized Clean Energy Financing</div>
+                  <div className="text-foreground mb-4 font-medium">Tokenized Climate Financing</div>
                   <div className="text-sm text-muted-foreground">
-                    Capital deployed to renewable projects worldwide
+                    Enabling transparent, accessible and climate-neutral capital flows.
                   </div>
                 </div>
               </GlowCard>
@@ -495,14 +495,14 @@ const Index = () => {
                 
                 <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                   <Button size="lg" variant="hero" className="w-full sm:w-auto">
-                    Join Early Access
+                    Check Now
                   </Button>
                   <Button size="lg" variant="outline" className="border-solar text-solar hover:bg-solar/10 w-full sm:w-auto">
-                    Follow @AetheraEnergy
+                    Follow @aetheraFi
                   </Button>
                 </div>
 
-                <div className="grid grid-cols-3 gap-6 mt-12 pt-8 border-t border-border">
+                {/*<div className="grid grid-cols-3 gap-6 mt-12 pt-8 border-t border-border">
                   <div>
                     <div className="text-3xl font-bold text-energy mb-1">5,000+</div>
                     <div className="text-sm text-muted-foreground">Community Members</div>
@@ -515,7 +515,7 @@ const Index = () => {
                     <div className="text-3xl font-bold text-energy mb-1">100%</div>
                     <div className="text-sm text-muted-foreground">Transparent</div>
                   </div>
-                </div>
+                </div>*/}
               </Card>
             </motion.div>
           </motion.div>

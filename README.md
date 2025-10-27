@@ -1,73 +1,43 @@
-# Welcome to your Lovable project
+# 🌞Aethera
 
-## Project info
+Bridging the $350B renewable financing gap with DePIN + tokenized assets.
 
-**URL**: https://lovable.dev/projects/cc14e250-a92d-4047-b0fa-9ec30111119d
+Because clean energy deserves better funding — faster, fairer, and decentralized.
 
-## How can I edit this code?
+## ⚡ Overview
 
-There are several ways of editing your application.
+Aethera is building a decentralized network for renewable power generation and storage, where every solar panel, wind turbine, and battery node can be financed, verified, and tokenized — transparently, on-chain.
 
-**Use Lovable**
+We’re not just powering clean energy.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/cc14e250-a92d-4047-b0fa-9ec30111119d) and start prompting.
+We’re powering a climate-neutral financial layer for the planet.
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🌍 Mission
 
-**Use your preferred IDE**
+> To make clean energy funding faster, fairer, and fully decentralized.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Aethera is tackling the $350B global financing gap in renewable energy by combining the power of:
+- DePIN (Decentralized Physical Infrastructure Networks) - to connect real-world renewable assets.
+- Tokenized financing — to unlock liquidity and democratize access to climate investments.
+- Stable yield mechanisms — to convert sunlight into stable, verifiable on-chain returns.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## 💡 Vision
 
-Follow these steps:
+Aethera aims to become the infrastructure backbone for renewable finance, enabling anyone, anywhere, to invest directly into clean energy production — while maintaining transparency, efficiency, and climate neutrality.
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+From sunlight → stable yield → tokenized access.
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## 🧩 Core Components
 
-# Step 3: Install the necessary dependencies.
-npm i
+- DePIN Layer — maps and connects renewable power nodes (solar, wind, storage) to the network.
+- Tokenized Financing Layer — fractionalizes ownership and returns from renewable projects.
+- Verification Layer — ensures on-chain transparency for production, yield, and carbon credits.
+- Liquidity Layer — enables trading and yield generation through decentralized finance protocols.
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
 
-**Edit a file directly in GitHub**
+## 🧠 How It Works
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/cc14e250-a92d-4047-b0fa-9ec30111119d) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+1. Installers submit verified renewable projects for financing.
+2. Investors provide liquidity, receiving tokenized yield-bearing assets.
+3. Smart contracts distribute stable yield from project revenue and carbon credits.
+4. DePIN nodes report performance data to maintain transparency and trust.
