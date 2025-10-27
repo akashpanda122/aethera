@@ -21,6 +21,7 @@ import heroImage from "@/assets/hero-renewable-network.jpg";
 import bgImage from "@/assets/bg-energy-grid.jpg";
 import ScrollExpandMedia from "@/components/ui/scroll-expansion-hero";
 import { GlowCard } from "@/components/ui/spotlight-card";
+import { StackedCircularFooter } from "@/components/ui/stacked-circular-footer";
 
 const Index = () => {
   const fadeInUp = {
@@ -521,35 +522,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="relative py-12 border-t border-border">
-        <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-energy to-transparent opacity-50" />
-        </div>
-        
-        <div className="container mx-auto px-4 relative">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-6">
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 bg-gradient-to-br from-energy to-solar rounded-lg flex items-center justify-center">
-                <Leaf className="w-6 h-6 text-background" />
-              </div>
-              <span className="text-2xl font-bold">Aethera</span>
-            </div>
-
-            <nav className="flex flex-wrap justify-center gap-6 text-sm text-muted-foreground">
-              <a href="#" className="hover:text-energy transition-colors">About</a>
-              <a href="#" className="hover:text-energy transition-colors">Documentation</a>
-              <a href="#" className="hover:text-energy transition-colors">Whitepaper</a>
-              <a href="#" className="hover:text-energy transition-colors">Join Discord</a>
-              <a href="#" className="hover:text-energy transition-colors">Twitter</a>
-            </nav>
-
-            <div className="text-sm text-muted-foreground">
-              © 2025 Aethera. Climate-neutral by design.
-            </div>
-          </div>
-        </div>
-      </footer>
+      <StackedCircularFooter />
     </div>
   );
 };
