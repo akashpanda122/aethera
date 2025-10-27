@@ -20,6 +20,7 @@ import {
 import heroImage from "@/assets/hero-renewable-network.jpg";
 import bgImage from "@/assets/bg-energy-grid.jpg";
 import ScrollExpandMedia from "@/components/ui/scroll-expansion-hero";
+import { GlowCard } from "@/components/ui/spotlight-card";
 
 const Index = () => {
   const fadeInUp = {
@@ -307,36 +308,54 @@ const Index = () => {
             viewport={{ once: true }}
           >
             <motion.div variants={fadeInUp}>
-              <Card className="p-8 text-center bg-gradient-to-br from-energy/10 to-transparent backdrop-blur-sm border-energy/20">
-                <Sun className="w-12 h-12 text-energy mx-auto mb-4" />
-                <div className="text-5xl font-bold text-energy mb-2">2,000+</div>
-                <div className="text-muted-foreground mb-4">Renewable Nodes Connected</div>
-                <div className="text-sm text-muted-foreground">
-                  Solar farms, wind turbines, and battery storage facilities
+              <GlowCard 
+                glowColor="green" 
+                customSize 
+                className="w-full h-auto aspect-auto p-8"
+              >
+                <div className="flex flex-col items-center justify-center text-center h-full">
+                  <Sun className="w-12 h-12 text-energy mb-4" />
+                  <div className="text-5xl font-bold text-energy mb-2">2,000+</div>
+                  <div className="text-foreground mb-4 font-medium">Renewable Nodes Connected</div>
+                  <div className="text-sm text-muted-foreground">
+                    Solar farms, wind turbines, and battery storage facilities
+                  </div>
                 </div>
-              </Card>
+              </GlowCard>
             </motion.div>
 
             <motion.div variants={fadeInUp}>
-              <Card className="p-8 text-center bg-gradient-to-br from-solar/10 to-transparent backdrop-blur-sm border-solar/20">
-                <Globe className="w-12 h-12 text-solar mx-auto mb-4" />
-                <div className="text-5xl font-bold text-solar mb-2">12+</div>
-                <div className="text-muted-foreground mb-4">Countries Participating</div>
-                <div className="text-sm text-muted-foreground">
-                  Global network spanning multiple continents
+              <GlowCard 
+                glowColor="blue" 
+                customSize 
+                className="w-full h-auto aspect-auto p-8"
+              >
+                <div className="flex flex-col items-center justify-center text-center h-full">
+                  <Globe className="w-12 h-12 text-solar mb-4" />
+                  <div className="text-5xl font-bold text-solar mb-2">12+</div>
+                  <div className="text-foreground mb-4 font-medium">Countries Participating</div>
+                  <div className="text-sm text-muted-foreground">
+                    Global network spanning multiple continents
+                  </div>
                 </div>
-              </Card>
+              </GlowCard>
             </motion.div>
 
             <motion.div variants={fadeInUp}>
-              <Card className="p-8 text-center bg-gradient-to-br from-energy/10 to-transparent backdrop-blur-sm border-energy/20">
-                <BarChart3 className="w-12 h-12 text-energy mx-auto mb-4" />
-                <div className="text-5xl font-bold text-energy mb-2">$50M+</div>
-                <div className="text-muted-foreground mb-4">Tokenized Clean Energy Financing</div>
-                <div className="text-sm text-muted-foreground">
-                  Capital deployed to renewable projects worldwide
+              <GlowCard 
+                glowColor="orange" 
+                customSize 
+                className="w-full h-auto aspect-auto p-8"
+              >
+                <div className="flex flex-col items-center justify-center text-center h-full">
+                  <BarChart3 className="w-12 h-12 text-energy mb-4" />
+                  <div className="text-5xl font-bold text-energy mb-2">$50M+</div>
+                  <div className="text-foreground mb-4 font-medium">Tokenized Clean Energy Financing</div>
+                  <div className="text-sm text-muted-foreground">
+                    Capital deployed to renewable projects worldwide
+                  </div>
                 </div>
-              </Card>
+              </GlowCard>
             </motion.div>
           </motion.div>
 
