@@ -70,13 +70,17 @@ const Index = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
-            <Button variant="hero" size="lg" className="group">
-              Explore the Network
-              <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-            </Button>
-            <Button variant="outline" size="lg" className="bg-background/50 backdrop-blur-sm border-energy/30 hover:bg-energy/10">
-              Join Now
-            </Button>
+            <a href="https://aethera-staking.vercel.app/">
+              <Button variant="hero" size="lg" className="group">
+                Explore the Network
+                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+              </Button>
+            </a>
+            <a href="https://aethera-staking.vercel.app/">
+              <Button variant="outline" size="lg" className="bg-background/50 backdrop-blur-sm border-energy/30 hover:bg-energy/10">
+                Join Now
+              </Button>
+            </a>
           </div>
 
           {/*<motion.div
@@ -494,12 +498,16 @@ const Index = () => {
                 </p>
                 
                 <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                  <Button size="lg" variant="hero" className="w-full sm:w-auto">
-                    Check Now
-                  </Button>
+                  <a href="https://aethera-staking.vercel.app/">
+                    <Button size="lg" variant="hero" className="w-full sm:w-auto">
+                      Check Now
+                    </Button>
+                  </a>
+                  <a href="https://x.com/aetheraFi">
                   <Button size="lg" variant="outline" className="border-solar text-solar hover:bg-solar/10 w-full sm:w-auto">
                     Follow @aetheraFi
                   </Button>
+                  </a>
                 </div>
 
                 {/*<div className="grid grid-cols-3 gap-6 mt-12 pt-8 border-t border-border">
